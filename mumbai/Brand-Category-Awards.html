@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./Brand-Category-Awards.css">
+    <link rel="icon" href="./images/netnex-X.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <title>CFO StraTech 2023 - Brand Category Award</title>
+</head>
+
+<body>
+    <header>
+        <div style="position: fixed;top: 0px; width: 100%;z-index: 200;padding:0px;" class="navigation nav-fixed panel">
+            <nav class="navbar  navbar-expand-lg ">
+                <div class="nav-container ">
+                    <div class="logo">
+                        <a href="">
+                            <div class="navbar-brand ">
+                                <a href="./index.html"><img src="./images/Netnex_footer_logo.svg" alt=""></a>
+                            </div>
+                        </a>
+                    </div>
+                    <button style="z-index: 2;" class="navbar-toggler bg-white" type="button" data-toggle="collapse"
+                        data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div style="flex-grow: 0;" class="collapse navbar-collapse  " id="navbarNavDropdown">
+                        <ul class="navbar-nav ul">
+                            <li class="nav-item  pr-4 ">
+                                <a class="nav-link text-black nav-font-size" href="./index.html#about">ABOUT</a>
+                            </li>
+                            <li class="nav-item   pr-4">
+                                <a class="nav-link text-white nav-font-size" href="./index.html#topics">TOPICS</a>
+                            </li>
+                            <li class="nav-item  pr-4 ">
+                                <a class="nav-link text-white nav-font-size" href="./index.html#speakers">SPEAKERS</a>
+                            </li>
+                            <li class="nav-item   pr-4">
+                                <a class="nav-link text-white nav-font-size" href="./index.html#attendees">ATTENDEES</a>
+                            </li>
+                            <li class="nav-item  pr-4 ">
+                                <a class="nav-link text-white nav-font-size" href="./index.html#awards">AWARDS</a>
+                            </li>
+                            <li class="nav-item   pr-4">
+                                <a class="nav-link text-white nav-font-size" href="./index.html#partners">PARTNERS</a>
+                            </li>
+
+                            <li class="nav-item  pr-4">
+                                <a class="nav-link text-white nav-font-size" href="./index.html#contact">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <script>
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function (event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("collapse");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            } 
+        </script>
+
+        <section class="spotlight ">
+            <div class="header-content">
+                <h1>CFO StraTech <br> <span class="small-header">Brand Category Awards</span></h1>
+            </div>
+        </section>
+    </header>
+    <section class="form-section container">
+        <h1>Thanks for your interest in submitting a
+            nomination for the CFO StraTech Awards 2023.</h1>
+        <br>
+        <br>
+        <h4>Please help us understand more about the Nominated Brand. </h4>
+        <br>
+        <div>
+            <form action="./Brand-Category-Awards.php" class="needs-validation p-3 " method="POST">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">First Name</label>
+                        <input type="text" class="form-control" placeholder="First Name" id="fname" required
+                            name="fname">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Last Name</label>
+                        <input type="text" class="form-control" placeholder="Last Name" id="lname" required
+                            name="lname">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Job Title</label>
+                        <input type="text" class="form-control" placeholder="Job Title" id="job" required name="job">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Company/Organization</label>
+                        <input type="text" class="form-control" placeholder="Company/Organization" id="company" required
+                            name="company">
+                    </div>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <p>Do you work for the company/organization you are nominating?</p>
+                        <div class="form-check">
+                            <input onclick="ifYes()" class="form-check-input" type="radio" name="WNradio" id="yes"
+                                value="Yes" required>Yes
+                            &nbsp; &nbsp; &nbsp;
+                            <input onclick="ifNo()" class="form-check-input" type="radio" name="WNradio" id="no"
+                                value="No" required>No
+                        </div>
+
+                    </div>
+                </div>
+                <div class="form-group " id="select">
+                    <p>If no, please indicate your organization’s relationship with the organization you are nominating
+                    </p>
+                    <div class="form-check">
+                        <input class="form-check-input checkbox-class" type="radio" name="RNradio"
+                            value="We are a public relations firm and are nominating our client">We are a
+                        public relations firm and are nominating our client
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input checkbox-class" type="radio" name="RNradio"
+                            value="We are customer and nominating our solution provider/vendor"> We are
+                        customer and nominating our solution provider/vendor
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input checkbox-class" type="radio" name="RNradio" value="Other"> Other
+                        (please describe)
+                        <label class="form-check-label" for="gridCheck">
+                            <input type="text" class="form-control" id="NRradioOther" placeholder="please describe"
+                                name="NRradioOther">
+                        </label>
+                    </div>
+                </div>
+                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Award Category Nominated for:</label>
+                <select class="custom-select my-1 mr-sm-2" id="select-option1" required name="AwardCategory[]">
+                    <option selected>Choose...</option>
+                    <option value="Trusted Brand Awards">Trusted Brand Awards </option>
+                    <option value="Excellence Awards">Excellence Awards</option>
+                    <option value="Hall of Fame">Hall of Fame</option>
+                </select>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Nominated Company/Organization:</label>
+                        <input type="text" class="form-control" placeholder="Company/Organization Name"
+                            id="NConmpanyName" required name="NConmpanyName">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Nominated Company/Organization Website:</label>
+                        <input type="text" class="form-control" placeholder="URL" id="NCUrl" required name="NCUrl">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Nominated Company/Organization Address:</label>
+                        <input type="text" class="form-control" placeholder="Address" id="NCAddress" required
+                            name="NCAddress">
+                        <input type="text" class="form-control" placeholder="City" id="NCCity" required name="NCCity">
+                        <input type="text" class="form-control" placeholder="State" id="NCState" required
+                            name="NCState">
+                    </div>
+                </div>
+                <br>
+                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Please indicate the primary industry that best
+                    matches the company/organization you are nominating:</label>
+                <select class="custom-select my-1 mr-sm-2" id="select-option2" required>
+                    <option selected>Choose...</option>
+                    <option value="Advertising/Marketing/PR/Media(Publishing, Broadcast, Online)">
+                        Advertising/Marketing/PR/Media(Publishing, Broadcast, Online)</option>
+                    <option value="Aerospace/Defense Contractor">Aerospace/Defense Contractor</option>
+                    <option value="Business Services/Consultant">Business Services/Consultant</option>
+                    <option value="Communication Carriers (ISP, Telecomm, Data Comm, Cable)">Communication Carriers
+                        (ISP, Telecomm, Data Comm, Cable)</option>
+                    <option value="Construction/Architecture/Engineering">Construction/Architecture/Engineering</option>
+                    <option value="E-Commerce/Internet">E-Commerce/Internet</option>
+                    <option value="Education">Education</option>
+                    <option value="Finance/Banking/Accounting">Finance/Banking/Accounting</option>
+                    <option value="Government - Federal (including Military)">Government - Federal (including Military)
+                    </option>
+                    <option value="Government - State/Local">Government - State/Local</option>
+                    <option value="Healthcare/Medical/Pharmaceutical/Bio-Tech">
+                        Healthcare/Medical/Pharmaceutical/Bio-Tech</option>
+                    <option value="Insurance/Real Estate/Legal">Insurance/Real Estate/Legal</option>
+                    <option value="Manufacturing & Process Industries">Manufacturing & Process Industries</option>
+                    <option value="Mining/Oil/Gas">Mining/Oil/Gas</option>
+                    <option value="Non-profit">Non-profit</option>
+                    <option value="Retailer/Wholesaler/Distributor (non-computer)">Retailer/Wholesaler/Distributor
+                        (non-computer)</option>
+                    <option value="Service Provider (MSP, BSP, ASP, ESP, Web Hosting)">Service Provider (MSP, BSP, ASP,
+                        ESP, Web Hosting)</option>
+                    <option value="Retailer/Distributor/Wholesaler (computer-related)">Retailer/Distributor/Wholesaler
+                        (computer-related)</option>
+                    <option value="Transportation/Utilities (Energy, Water, etc.)">Transportation/Utilities (Energy,
+                        Water, etc.)</option>
+                    <option value="Travel/Hospitality/Entertainment/Recreation">
+                        Travel/Hospitality/Entertainment/Recreation</option>
+                    <option value="VAR/VAD/OEM">VAR/VAD/OEM</option>
+                    <option value="Venture Capital/Private Equity/M&A">Venture Capital/Private Equity/M&A</option>
+                    <option value="Venture Service Provider (Inv. Banker/Legal/Accounting/Etc.)">Venture Service
+                        Provider (Inv. Banker/Legal/Accounting/Etc.)</option>
+                    <option value="Computer/Network Consultant">Computer/Network Consultant</option>
+                    <option value="Other (Please specify in below box)">Other (Please specify in below box)</option>
+                </select>
+
+                <br>
+                <br>
+                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Number of employees at the nominated
+                    organization:</label>
+                <select class="custom-select  my-1 mr-sm-2" id="select-option3" required>
+                    <option selected>Choose...</option>
+                    <option value="100,000 or more">100,000 or more</option>
+                    <option value="20,000 +">20,000 +</option>
+                    <option value="10,000 – 19,999">10,000 – 19,999</option>
+                    <option value="5,000 – 9,999">5,000 – 9,999</option>
+                    <option value="1,000 – 4,999">1,000 – 4,999</option>
+                    <option value="500 – 999">500 – 999</option>
+                    <option value="100 – 499">100 – 499</option>
+                    <option value="Less than 100">Less than 100</option>
+                </select>
+                <br>
+                <br> <br>
+                <h5>THE NOMINATED PRODUCT/SOLUTION</h5>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Product/Solution Name:</label>
+                        <input type="text" class="form-control" placeholder="Product/Solution Name" required
+                            name="PSName">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Executive Summary : <br><span
+                            class="blockquote-footer">[Please describe this project and its objectives and its
+                            deliverables/results (100 words)]</span></label>
+                    <textarea class="form-control col-lg-6 col-md-12" id="exampleFormControlTextarea1" maxlength="100"
+                        rows="3" required name="ExecutiveSummary"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Describe your Product/Solution and what business problem
+                        you were trying to solve and how you solved it:<br><span class="blockquote-footer">(600
+                            characters maximum)</span></label>
+                    <textarea class="form-control col-lg-8 col-md-12" id="exampleFormControlTextarea1" maxlength="600"
+                        rows="3" required name="ProductSolution"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Describe what is innovative about this product/solution and
+                        how it solves relevant business problem:<br><span class="blockquote-footer">[The innovation
+                            maybe based on leveraging a new technology, creating a new way of using existing technology
+                            or implementing an overall approach that is innovative in the context of the organization.
+                            (4000 characters maximum)]</span></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" maxlength="4000" rows="3" required
+                        name="Innovate"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Describe the measurable business results of the
+                        project:<br><span class="blockquote-footer">[Please provide specific metrics – ROI or other
+                            financial details, other evidence or data – that support the business value of your
+                            offering. (4000 characters maximum)]</span></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" maxlength="4000" rows="3" required
+                        name="BusinessResults"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Why do you think your project worthy of this
+                        award?<br><span class="blockquote-footer">[Please share anything additional you would like the
+                            judges to know about why this project. (2000 characters maximum)]</span></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" maxlength="2000" rows="3" required
+                        name="WorthyAward"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">If there is anything in the information you have provided
+                        in this nomination that must remain confidential, please indicate it here:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" required
+                        name="confidential"></textarea>
+                </div>
+                <p class="blockquote-footer">By submitting this nomination, I acknowledge that the information it
+                    contains is accurate, that the appropriate parties at the nominated organization are aware of the
+                    nomination and its contents, and the nominated organization is able and willing to accept the award
+                    if chosen by the panel of judges</p>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="I Agree" name="agree" id="agree" required>I
+                    Agree
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary registration-btn">Submit</button>
+            </form>
+
+        </div>
+        
+    </section>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class=" div1 col-12 col-lg-4 col-md-4">
+                    <img src="./images/Netnex_footer_logo.svg" class="footer-logo mb-5 pb-3" alt="">
+                    <div>
+                        <p class="social-media">Connect &nbsp; &nbsp; &nbsp; <a target="_blank"
+                                href="https://www.linkedin.com/company/netnex-global/about/"><i
+                                    class="fa-brands fa-linkedin"></i></a>&nbsp; &nbsp; &nbsp;
+                            <a target="_blank" href="https://www.instagram.com/netnex.global/?hl=en"><i
+                                    class="fa-brands fa-square-instagram"></i></a> &nbsp; &nbsp; &nbsp;<a
+                                target="_blank" href="https://www.youtube.com/channel/UCVYzlmRkYfzOvuP2CTtsUhQ"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="div2 col-12 col-lg-4 col-md-4">
+                    <p class="mb-5">Samrah Plaza, St. Marks Road, Bengaluru, Karnataka - 560001</p>
+                    <p>© Copyright: 2023 All Rights Reserved by NETNEX</p>
+                </div>
+                <div class="div3 col-12 col-lg-4 col-md-4 d-flex justify-content-end">
+                    <div>
+                        <p class="mb-5"><i class="fa-solid fa-envelope"></i> &nbsp; reach@netnexglobal.com <br>
+                            <i class="fa-solid fa-phone"></i> &nbsp; +91 9902 270 877
+                        </p>
+                        <p class="privacy-policy"><a target="_blank"
+                                href="https://netnexgroup.com/privacy-policy/">Privacy Policies • Terms & Conditions</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex; margin: auto; align-items: center; justify-content: center; padding-bottom: 0px;">
+            <!-- <a class="go-top" href="#header">Go Top</a> -->
+
+            <button onclick="topFunction()" id="myBtn" title="Go top"><img src="./images/top_arrow.svg" alt=""></button>
+        </div>
+    </footer>
+
+    <script>
+        function ifNo() {
+            let checkbox = document.getElementById("no");
+            let select = document.getElementById("select");
+            if (checkbox.checked == true) {
+                select.style.display = "block";
+            } else {
+                select.style.display = "none"
+            }
+        }
+
+        function ifYes() {
+            let checkbox = document.getElementById("yes");
+            let select = document.getElementById("select");
+            if (checkbox.checked == true) {
+                select.style.display = "none";
+            }
+            else {
+                select.style.display = "block"
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <script>
+        // navbar design used it below
+        const scrollme = document.querySelector('.nav-fixed');
+        window.onscroll = () => {
+            if (window.scrollY > 30) {
+                scrollme.classList.add('nav-active');
+            } else {
+                scrollme.classList.remove('nav-active');
+            }
+
+        };
+    </script>
+
+
+</body>
+
+</html>

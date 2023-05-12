@@ -1,0 +1,1584 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./images/netnex-X.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <!-- font family -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- strip  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- section 7 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- section 8 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+        integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <title>CFO StraTech 2023 - Mumbai</title>
+</head>
+
+<body>
+    <header>
+        <section>
+            <div style="position: fixed;top: 0px; width: 100%;z-index:110;padding: 10px 0px;"
+                class="navigation nav-fixed panel">
+                <nav class="navbar  navbar-expand-lg navbar-light">
+                    <div class="nav-container ml-5">
+                        <div class="logo">
+                            <a href="">
+                                <div class="navbar-brand ">
+                                    <img src="./images/Netnex_footer_logo.svg" width="250" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <button style="z-index: 2;" class="navbar-toggler bg-white" type="button" data-toggle="collapse"
+                            data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div style="flex-grow: 0;" class="collapse navbar-collapse  " id="navbarNavDropdown">
+                            <ul class="navbar-nav ul">
+                                <li class="nav-item  pr-4 ">
+                                    <a class="nav-link text-white nav-font-size" href="#about">ABOUT</a>
+                                </li>
+
+                                <li class="nav-item   pr-4">
+                                    <a class="nav-link text-white nav-font-size" href="#topics">TOPICS</a>
+                                </li>
+                                <li class="nav-item  pr-4 ">
+                                    <a class="nav-link text-white nav-font-size" href="#speakers">SPEAKERS</a>
+                                </li>
+                                <li class="nav-item   pr-4">
+                                    <a class="nav-link text-white nav-font-size" href="#attendees">ATTENDEES</a>
+                                </li>
+                                <li class="nav-item  pr-4 ">
+                                    <a class="nav-link text-white nav-font-size" href="#awards">AWARDS</a>
+                                </li>
+                                <li class="nav-item   pr-4">
+                                    <a class="nav-link text-white nav-font-size" href="#partners">PARTNERS</a>
+                                </li>
+
+                                <li class="nav-item  pr-4">
+                                    <a class="nav-link text-white nav-font-size" href="#contact">CONTACT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="myimgDiv" style="position: fixed;
+            top: 73px;
+            z-index: 100;display: none;">
+                <a target="_blank" href="https://netnexglobal.com/"><img src="./images/netnexglobal_accent_strip.svg"
+                        alt="Manager" class="img-responsive " /></a>
+            </div>
+            <script>
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 60) {
+                        $('.myimgDiv').show(1000);
+                    }
+                    else {
+                        $('.myimgDiv').hide(1000);
+                    }
+                });
+            </script>
+            <script>
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function (event) {
+                    if (!event.target.matches('.dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("collapse");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                } 
+            </script>
+        </section>
+        <div data-aos="fade-right"
+            class="header-content d-flex flex-column justify-content-center align-items-start ">
+            <img src="./images/cfoStratech-logo.png" width="100%" alt="">
+
+            <h5>Tech as a strategy roadmap for the finance function</h5>
+            <p>May 18, 2023 | Mumbai </p><span id="about"></span>
+        </div>
+        <div class="jw-marriott">
+            <img src="./images/jw_marriott.png" width="170" alt="">
+        </div>
+
+    </header>
+    <section class="section1">
+        <div class="container">
+            <p><span class="headerline" style="color: #00534D;" id="aboutus">ABOUT</span></p>
+            <p data-aos="fade-up" style="font-size:38px; font-weight:900; color:#00534D;text-align: left;" class="aos-init aos-animate">
+                CFO STRATECH 2023
+            </p>
+            <!-- <h4>What a difference a year makes!</h4> -->
+            <p data-aos="zoom-in">Businesses in India are witnessing the shift of a whole new paradigm, with a tidal
+                wave of technology innovation impacting the finance and business processes and CFOs are at the forefront
+                of this strategic change. As we move from resilience to the building blocks of the future, we'll explore
+                the most essential technologies and revolutionary concepts in business and workforce that are radically
+                changing our future. <br><br>
+                <b>CFO StraTech 2023</b> will bring together a community of CFOs who are driven by change and interested
+                in growth to share insights, learn from collective experiences, and explore ways to leverage strategy
+                and technology to achieve sustainable business outcomes. Experience inspirational keynotes, unrivalled
+                networking opportunities and gain access to the insight you need to be more effective in your role, your
+                team and to drive change within your organisation. <br><br>
+                JOIN INDIA'S TOP CFOs IN A DAY OF INSIGHTFUL SESSIONS & INNOVATIVE SOLUTIONS TO INSPIRE YOUR BUSINESS
+                STRATEGY!
+
+            </p>
+        </div><span id="topics"></span>
+    </section>
+
+    <script>
+
+        $(".hover").mouseleave(
+            function () {
+                $(this).removeClass("hover");
+            }
+        );
+
+    </script>
+    <section class="section2" style="background: url(./images/topics-bg.jpg) no-repeat center/cover ;">
+        <div class="container">
+            <p><span class="headerline" style="color: #EBE3DD;font-size: 18px;">AGENDA</span></p>
+            <p data-aos="fade-up" style="font-size:38px; font-weight:900; color:#EBE3DD;" class="aos-init aos-animate">
+                TOPICS
+            </p>
+        </div>
+        <br>
+        <div class="content-103">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mt-2">
+                        <div class="service-post">
+                            <div class="service-content">
+                                <!-- <h3 class="service-title"> </h3> -->
+                                <p class="service-description" style="font-weight: 900; ">
+                                    FORECASTING STRATEGY FOR BUDGETING EFFICIENCY</p>
+                            </div>
+                            <div class="service-hover"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-2">
+                        <div class="service-post">
+                            <div class="service-content">
+                                <!-- <h3 class="service-title"> </h3> -->
+                                <p class="service-description" style="font-weight: 900; ">
+                                    DIGITAL CAPITALISATION & TRANSFORMATION INITIATIVES</p>
+                            </div>
+                            <div class="service-hover"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-2">
+                        <div class="service-post">
+                            <div class="service-content">
+                                <!-- <h3 class="service-title"> </h3> -->
+                                <p class="service-description" style="font-weight: 900; ">
+                                    BUILDING THE ESG STRATEGY</p>
+                            </div>
+                            <div class="service-hover"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-2">
+                        <div class="service-post">
+                            <div class="service-content">
+                                <!-- <h3 class="service-title"> </h3> -->
+                                <p class="service-description" style="font-weight: 900; ">
+                                    A CFO's ROLE IN VALUATION & VALUE CREATION </p>
+                            </div>
+                            <div class="service-hover"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-2">
+                        <div class="service-post">
+                            <div class="service-content">
+                                <!-- <h3 class="service-title"> </h3> -->
+                                <p class="service-description" style="font-weight: 900; ">
+                                    CFO's ROLE IN STRATEGIC GROWTH </p>
+                            </div>
+                            <div class="service-hover"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-2">
+                        <div class="service-post">
+                            <div class="service-content">
+                                <!-- <h3 class="service-title"> </h3> -->
+                                <p class="service-description" style="font-weight: 900; ">
+                                    SCENARIO PLANNING WITH ENHANCED TECHNOLOGIES</p>
+                            </div>
+                            <div class="service-hover"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-2">
+                        <div class="service-post">
+                            <div class="service-content">
+                                <!-- <h3 class="service-title"> </h3> -->
+                                <p class="service-description" style="font-weight: 900; ">
+                                    COST OPTIMISATION</p>
+                            </div>
+                            <div class="service-hover"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-2">
+                        <div class="service-post">
+                            <div class="service-content">
+                                <!-- <h3 class="service-title"> </h3> -->
+                                <p class="service-description" style="font-weight: 900; ">
+                                    REVISITING WORKING CAPITAL & CASH FLOW MANAGEMENT</p>
+                            </div>
+                            <div class="service-hover"></div>
+                        </div>
+                    </div>
+                </div>
+                <span id="speakers"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section6 " id="speakers">
+        <div class="container">
+            <p><span class="headerline" style="color: #EBE3DD;font-size: 18px;">EXPERTS</span></p>
+            <p data-aos="fade-up" style="font-size:38px; font-weight:900; color:#EBE3DD;" class="aos-init aos-animate">
+                SPEAKERS 2023
+            </p>
+        </div>
+        <p class="container">The CFO StraTech offers a unique opportunity to learn about the latest information, trends
+            and techniques in
+            finance to leverage strategy & technologies to bring about sustainable business outcomes.</p>
+        <div class="speakers-section container">
+            <div class="content_wrapper grid mentors">
+                <!-- Speaker Block Start -->
+                <!-- block 1 -->
+                <div class="speaker-card-wrapper guest">
+                    <div class="speaker-image-wrapper-2">
+                        <div class="filter dark"></div>
+                        <img src="./images/speakers/Neetu Kashiramka.png" loading="lazy" alt="" class="speaker-image-2">
+                        <div href="#" class="speaker-card-content w-inline-block">
+                            <div class="div-block-8">
+                                <div class="speaker-name-2">Neetu Kashiramka</div>
+                                <div class="speaker-designation-2">
+                                    Chief Financial Officer </div>
+                                <div class="speaker-company">
+                                    VIP Industries Limited</div>
+                            </div>
+                            <a href="https://www.linkedin.com/in/neetu-kashiramka-23135a12/?originalSubdomain=in"
+                                target="_blank" class="social-icon linkedin"><img
+                                    src="https://uploads-ssl.webflow.com/61c9ce130a411d976b9873a5/61cae6760ea3d11175675373_ic_linkedin.svg"
+                                    alt="linkedin" class="icon"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="speaker-card-wrapper guest">
+                    <div class="speaker-image-wrapper-2">
+                        <div class="filter dark"></div>
+                        <img src="./images/speakers/Sambasivan G.png" loading="lazy" alt="" class="speaker-image-2">
+                        <div href="#" class="speaker-card-content w-inline-block">
+                            <div class="div-block-8">
+                                <div class="speaker-name-2">Sambasivan G</div>
+                                <div class="speaker-designation-2">
+                                    Chief Financial Officer</div>
+                                <div class="speaker-company">TATA Play
+                                </div>
+                            </div>
+                            <a href="https://www.linkedin.com/in/sambasivan-g-1950a712/" target="_blank"
+                                class="social-icon linkedin"><img
+                                    src="https://uploads-ssl.webflow.com/61c9ce130a411d976b9873a5/61cae6760ea3d11175675373_ic_linkedin.svg"
+                                    alt="linkedin" class="icon"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="speaker-card-wrapper guest">
+                    <div class="speaker-image-wrapper-2">
+                        <div class="filter dark"></div>
+                        <img src="./images/speakers/Abhinav Jain Ranka.png" loading="lazy" alt=""
+                            class="speaker-image-2">
+                        <div href="#" class="speaker-card-content w-inline-block">
+                            <div class="div-block-8">
+                                <div class="speaker-name-2">Abhinav Jain Ranka</div>
+                                <div class="speaker-designation-2">
+                                    CFO and Head Finance</div>
+                                <div class="speaker-company">PharmEasy
+                                </div>
+                            </div>
+                            <a href="https://www.linkedin.com/in/abhinavpjain/?originalSubdomain=in" target="_blank"
+                                class="social-icon linkedin"><img
+                                    src="https://uploads-ssl.webflow.com/61c9ce130a411d976b9873a5/61cae6760ea3d11175675373_ic_linkedin.svg"
+                                    alt="linkedin" class="icon"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="speaker-card-wrapper guest">
+                    <div class="speaker-image-wrapper-2">
+                        <div class="filter dark"></div>
+                        <img src="./images/speakers/Sandeep Batra.png" loading="lazy" alt="" class="speaker-image-2">
+                        <div href="#" class="speaker-card-content w-inline-block">
+                            <div class="div-block-8">
+                                <div class="speaker-name-2">Sandeep Batra</div>
+                                <div class="speaker-designation-2">
+                                    Chief Financial Officer </div>
+                                <div class="speaker-company">Pidilite Industries</div>
+                            </div>
+                            <a href="https://www.linkedin.com/in/batrasandeep/?originalSubdomain=in" target="_blank"
+                                class="social-icon linkedin"><img
+                                    src="https://uploads-ssl.webflow.com/61c9ce130a411d976b9873a5/61cae6760ea3d11175675373_ic_linkedin.svg"
+                                    alt="linkedin" class="icon"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- block 1 -->
+
+                <!-- block 2 -->
+
+                <div class="speaker-card-wrapper guest">
+                    <div class="speaker-image-wrapper-2">
+                        <div class="filter dark"></div>
+                        <img src="./images/speakers/Neeraj_Jain.png" loading="lazy" alt="" class="speaker-image-2">
+                        <div href="#" class="speaker-card-content w-inline-block">
+                            <div class="div-block-8">
+                                <div class="speaker-name-2">Neeraj Jain</div>
+                                <div class="speaker-designation-2">
+                                    Independent Director, Board Advisor, Angel Investor; Ex CFO </div>
+                                <div class="speaker-company">J&J Medical India</div>
+                            </div>
+                            <a href="https://www.linkedin.com/in/neeraj-jain-8240838/?originalSubdomain=in" target="_blank"
+                                class="social-icon linkedin"><img
+                                    src="https://uploads-ssl.webflow.com/61c9ce130a411d976b9873a5/61cae6760ea3d11175675373_ic_linkedin.svg"
+                                    alt="linkedin" class="icon"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="speaker-card-wrapper guest">
+                    <div class="speaker-image-wrapper-2">
+                        <div class="filter dark"></div>
+                        <img src="./images/speakers/Piyush_Kakkad.png" loading="lazy" alt="" class="speaker-image-2">
+                        <div href="#" class="speaker-card-content w-inline-block">
+                            <div class="div-block-8">
+                                <div class="speaker-name-2">Piyush Kakkad</div>
+                                <div class="speaker-designation-2">
+                                    Chief Financial Officer </div>
+                                <div class="speaker-company">Rebel Foods</div>
+                            </div>
+                            <a href="https://www.linkedin.com/in/piyush-kakkad-b991a2a1/?originalSubdomain=in" target="_blank"
+                                class="social-icon linkedin"><img
+                                    src="https://uploads-ssl.webflow.com/61c9ce130a411d976b9873a5/61cae6760ea3d11175675373_ic_linkedin.svg"
+                                    alt="linkedin" class="icon"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="speaker-card-wrapper guest">
+                    <div class="speaker-image-wrapper-2">
+                        <div class="filter dark"></div>
+                        <img src="./images/speakers/Tanushree_Bagrodia.png" loading="lazy" alt="" class="speaker-image-2">
+                        <div href="#" class="speaker-card-content w-inline-block">
+                            <div class="div-block-8">
+                                <div class="speaker-name-2">Tanushree Bagrodia</div>
+                                <div class="speaker-designation-2">
+                                    CXO, Independent Director </div>
+                                <div class="speaker-company">Laxmi Organic Industries Ltd</div>
+                            </div>
+                            <a href="https://www.linkedin.com/in/bagrodia-tanushree/?originalSubdomain=in" target="_blank"
+                                class="social-icon linkedin"><img
+                                    src="https://uploads-ssl.webflow.com/61c9ce130a411d976b9873a5/61cae6760ea3d11175675373_ic_linkedin.svg"
+                                    alt="linkedin" class="icon"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="speaker-card-wrapper guest">
+                    <div class="speaker-image-wrapper-2">
+                        <div class="filter dark"></div>
+                        <img src="./images/speakers/Siddhartha_Shankar.png" loading="lazy" alt="" class="speaker-image-2">
+                        <div href="#" class="speaker-card-content w-inline-block">
+                            <div class="div-block-8">
+                                <div class="speaker-name-2">Siddhartha Shankar</div>
+                                <div class="speaker-designation-2">
+                                    Finance Head - Lighting Business </div>
+                                <div class="speaker-company">Crompton Greaves Consumer Electricals Limited</div>
+                            </div>
+                            <a href="https://www.linkedin.com/in/sidd-shankar/?trk=public_profile_samename-profile&originalSubdomain=in" target="_blank"
+                                class="social-icon linkedin"><img
+                                    src="https://uploads-ssl.webflow.com/61c9ce130a411d976b9873a5/61cae6760ea3d11175675373_ic_linkedin.svg"
+                                    alt="linkedin" class="icon"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- block 2 -->
+                
+                <!-- block 3 -->
+
+                <div class="speaker-card-wrapper guest">
+                    <div class="speaker-image-wrapper-2">
+                        <div class="filter dark"></div>
+                        <img src="./images/speakers/Rahul_Kedia.png" loading="lazy" alt="" class="speaker-image-2">
+                        <div href="#" class="speaker-card-content w-inline-block">
+                            <div class="div-block-8">
+                                <div class="speaker-name-2">Rahul Kedia</div>
+                                <div class="speaker-designation-2">
+                                    CFO & Wholetime Director</div>
+                                <div class="speaker-company">Roche Diabetes Care India</div>
+                            </div>
+                            <a href="https://www.linkedin.com/in/rahul-g-kedia-34680714/?originalSubdomain=in" target="_blank"
+                                class="social-icon linkedin"><img
+                                    src="https://uploads-ssl.webflow.com/61c9ce130a411d976b9873a5/61cae6760ea3d11175675373_ic_linkedin.svg"
+                                    alt="linkedin" class="icon"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="speaker-card-wrapper guest">
+                    <div class="speaker-image-wrapper-2">
+                        <div class="filter dark"></div>
+                        <img src="./images/speakers/Yogesh_Udhoji.png" loading="lazy" alt="" class="speaker-image-2">
+                        <div href="#" class="speaker-card-content w-inline-block">
+                            <div class="div-block-8">
+                                <div class="speaker-name-2">Yogesh Udhoji</div>
+                                <div class="speaker-designation-2">
+                                    Chief Financial Officer </div>
+                                <div class="speaker-company">Muthoot Housing Finance</div>
+                            </div>
+                            <a href="https://www.linkedin.com/in/rahul-g-kedia-34680714/?originalSubdomain=in" target="_blank"
+                                class="social-icon linkedin"><img
+                                    src="https://uploads-ssl.webflow.com/61c9ce130a411d976b9873a5/61cae6760ea3d11175675373_ic_linkedin.svg"
+                                    alt="linkedin" class="icon"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="speaker-card-wrapper guest">
+                    <div class="speaker-image-wrapper-2">
+                        <div class="filter dark"></div>
+                        <img src="./images/speakers/Jigar_Shah.png" loading="lazy" alt="" class="speaker-image-2">
+                        <div href="#" class="speaker-card-content w-inline-block">
+                            <div class="div-block-8">
+                                <div class="speaker-name-2">Jigar Shah</div>
+                                <div class="speaker-designation-2">
+                                    Chief Financial Officer  </div>
+                                <div class="speaker-company">NSDL Payments Bank</div>
+                            </div>
+                            <a href="https://www.linkedin.com/in/jigarshahmumbai/?originalSubdomain=in" target="_blank"
+                                class="social-icon linkedin"><img
+                                    src="https://uploads-ssl.webflow.com/61c9ce130a411d976b9873a5/61cae6760ea3d11175675373_ic_linkedin.svg"
+                                    alt="linkedin" class="icon"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="speaker-card-wrapper guest">
+                    <div class="speaker-image-wrapper-2">
+                        <div class="filter dark"></div>
+                        <img src="./images/speakers/Niraj_Hutheesing.png" loading="lazy" alt="" class="speaker-image-2">
+                        <div href="#" class="speaker-card-content w-inline-block">
+                            <div class="div-block-8">
+                                <div class="speaker-name-2">Niraj Hutheesing </div>
+                                <div class="speaker-designation-2">
+                                    Founder and Managing Director</div>
+                                <div class="speaker-company">Cygnet Infotech</div>
+                            </div>
+                            <a href="https://www.linkedin.com/in/nirajhutheesing/?originalSubdomain=in" target="_blank"
+                                class="social-icon linkedin"><img
+                                    src="https://uploads-ssl.webflow.com/61c9ce130a411d976b9873a5/61cae6760ea3d11175675373_ic_linkedin.svg"
+                                    alt="linkedin" class="icon"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- block 3 -->
+
+                <!-- block 4 -->
+
+                <div class="speaker-card-wrapper guest">
+                    <div class="speaker-image-wrapper-2">
+                        <div class="filter dark"></div>
+                        <img src="./images/speakers/Yashpal_Jajodia.png" loading="lazy" alt="" class="speaker-image-2">
+                        <div href="#" class="speaker-card-content w-inline-block">
+                            <div class="div-block-8">
+                                <div class="speaker-name-2">Yashpal Jajodia</div>
+                                <div class="speaker-designation-2">
+                                    Director Finance & IT</div>
+                                <div class="speaker-company">Amcor</div>
+                            </div>
+                            <a href="https://www.linkedin.com/in/yashpal-jajodia/?originalSubdomain=in" target="_blank"
+                                class="social-icon linkedin"><img
+                                    src="https://uploads-ssl.webflow.com/61c9ce130a411d976b9873a5/61cae6760ea3d11175675373_ic_linkedin.svg"
+                                    alt="linkedin" class="icon"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- block 4 -->
+
+            </div>
+        </div>
+    </section>
+    <section class="multiple-section1">
+        <section class="section3">
+            <div class="container">
+                <p><span class="headerline" style="color: #EBE3DD;font-size: 18px;">HIGHLIGHTS</span></p>
+                <p data-aos="fade-up" style="font-size:38px; font-weight:900; color:#EBE3DD;"
+                    class="aos-init aos-animate">
+                    WHY ATTEND
+                </p>
+            </div>
+            <br>
+            <br>
+            <section class="section-services">
+                <div class="container">
+                    <div class="row aos-init aos-animate" data-aos="fade-left">
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="single-service">
+                                <div class="content">
+                                    <span class="icon">
+                                        <img src="./images/versatile.png" style="width: 78%;">
+                                    </span>
+                                    <h5 class="title">VERSATILE CONTENT</h5>
+                                    <p class="description">Strategies &amp; technologies key to digitization of finance
+                                        functions &amp; business operations discussed in engaging &amp; dynamic formats
+                                        of
+                                        the agenda
+                                    </p>
+                                </div>
+                                <span class="circle-before"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="single-service">
+                                <div class="content">
+                                    <span class="icon">
+                                        <img src="./images/solution.png" style="width: 78%;">
+                                    </span>
+                                    <h3 class="title">SOLUTION SHOWCASE</h3>
+                                    <p class="description">Explore and choose from series of options for your business;
+                                        discuss one to one with solution providers to understand their application for
+                                        your
+                                        specific requirement</p>
+                                </div>
+                                <span class="circle-before"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="single-service">
+                                <div class="content">
+                                    <span class="icon">
+                                        <img src="./images/leader.png" style="width: 78%;">
+                                    </span>
+                                    <h3 class="title">SEASONED LEADERS</h3>
+                                    <p class="description">Proven CFOs &amp; business leaders share use cases and tested
+                                        experience for better understanding of the technology applications, best
+                                        practices
+                                        and optimization of resources</p>
+                                </div>
+                                <span class="circle-before"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="single-service">
+                                <div class="content">
+                                    <span class="icon">
+                                        <img src="./images/peer-to-peer.png" style="width: 78%;">
+                                    </span>
+                                    <h3 class="title">PEER TO PEER NETWORKING</h3>
+                                    <p class="description">Connect, share and learn from your peers across industries;
+                                        this
+                                        will help you learn &amp; takeaway how others are leveraging strategies &amp;
+                                        technologies for desired business outcomes.
+                                    </p>
+                                </div>
+                                <span class="circle-before"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="single-service">
+                                <div class="content">
+                                    <span class="icon">
+                                        <img src="./images/opportunity.png" style="width: 78%;">
+                                    </span>
+                                    <h3 class="title"> ENGAGEMENT OPPORTUNITIES</h3>
+                                    <p class="description">Plenty of interaction windows through the event with chat
+                                        function, polling, Q&amp;A sessions,
+                                        speaker meets and private discussion rooms</p>
+                                </div>
+                                <span class="circle-before"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="single-service">
+                                <div class="content">
+                                    <span class="icon">
+                                        <img src="./images/computer.png" style="width: 78%;">
+                                    </span>
+                                    <h3 class="title"> ON DEMAND CONTENT</h3>
+                                    <p class="description">Exclusive access to all conference content will be available
+                                        to
+                                        the registered attendees for future reference and continued learning even after
+                                        the
+                                        event</p>
+                                </div>
+                                <span class="circle-before"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+    </section>
+
+    <section class="multiple-section2">
+        <section class="section4">
+            <div class="container">
+                <p><span class="headerline" style="color: #00534D;font-size: 18px;">DELEGATES</span></p>
+                <p data-aos="fade-up" style="font-size:38px; font-weight:900; color:#00534D;"
+                    class="aos-init aos-animate">
+                    ATTENDEES
+                </p>
+            </div>
+            <div class="container">
+                <section class=" attendees-section">
+                    <div class="inner-container">
+                        <div class="attendees ">
+                            <div>
+                                <p>GROUP CHIEF FINANCIAL OFFICER</p>
+                            </div>
+                            <div>
+                                <p>CHIEF FINANCIAL OFFICER</p>
+                            </div>
+                            <div>
+                                <p>HEAD OF FINANCE PLANNING & ANALYSIS</p>
+                            </div>
+                            <div>
+                                <p>HEAD OF BUSINESS TRANSFORMATION</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </section>
+
+                <br>
+                <br>
+                <div class="profiles-div">
+                    <center>
+                        <h4 class="text-black">Industries Represented</h4>
+                    </center>
+                    <div style="background-color:#162C24 ;border-radius: 16px;color: #B29985 !important;" class="row ">
+                        <div data-aos="zoom-in" data-aos-duration="2000" class="industries col-4 col-lg-2 col-md-2">
+                            <div>
+                                <img src="./images/bfsi.png" width="80" alt="">
+                            </div>
+                            <p>BFSI</p>
+                        </div>
+                        <div data-aos="zoom-in" data-aos-duration="2000" class="industries col-4 col-lg-2 col-md-2">
+                            <div>
+                                <img src="./images/manufacturing.png" width="80" alt="">
+                            </div>
+                            <p>Manufacturing</p>
+                        </div>
+                        <div data-aos="zoom-in" data-aos-duration="2000" class="industries col-4 col-lg-2 col-md-2">
+                            <div>
+                                <img src="./images/shopping-cart.png" width="80" alt="">
+                            </div>
+                            <p>Retail</p>
+                        </div>
+                        <div data-aos="zoom-in" data-aos-duration="2000" class="industries col-4 col-lg-2 col-md-2">
+                            <div>
+                                <img src="./images/truck.png" width="80" alt="">
+                            </div>
+                            <p>Logistics</p>
+                        </div>
+                        <div data-aos="zoom-in" data-aos-duration="2000" class="industries col-4 col-lg-2 col-md-2">
+                            <div>
+                                <img src="./images/e-commerce.png" width="80" alt="">
+                            </div>
+                            <p>E-Commerce</p>
+                        </div>
+                        <div data-aos="zoom-in" data-aos-duration="2000" class="industries col-4 col-lg-2 col-md-2">
+                            <div>
+                                <img src="./images/fintech.png" width="80" alt="">
+                            </div>
+                            <p>Fintech</p>
+                        </div>
+                        <div data-aos="zoom-in" data-aos-duration="2000" class="industries col-4 col-lg-2 col-md-2">
+                            <div>
+                                <img src="./images/healthcare.png" width="80" alt="">
+                            </div>
+                            <p>Healthcare</p>
+                        </div>
+                        <div data-aos="zoom-in" data-aos-duration="2000" class="industries col-4 col-lg-2 col-md-2">
+                            <div>
+                                <img src="./images/hospitality.png" width="80" alt="">
+                            </div>
+                            <p>Hospitality</p>
+                        </div>
+                        <div data-aos="zoom-in" data-aos-duration="2000" class="industries col-4 col-lg-2 col-md-2">
+                            <div>
+                                <img src="./images/infrastructure.png" width="80" alt="">
+                            </div>
+                            <p>Infrastructure</p>
+                        </div>
+                        <div data-aos="zoom-in" data-aos-duration="2000" class="industries col-4 col-lg-2 col-md-2">
+                            <div>
+                                <img src="./images/supply-chain.png" width="80" alt="">
+                            </div>
+                            <p>Supply Chain</p>
+                        </div>
+                        <div data-aos="zoom-in" data-aos-duration="2000" class="industries col-4 col-lg-2 col-md-2">
+                            <div>
+                                <img src="./images/utilities.png" width="80" alt="">
+                            </div>
+                            <p>Utilities</p>
+                        </div>
+                        <div data-aos="zoom-in" data-aos-duration="2000" class="industries col-4 col-lg-2 col-md-2">
+                            <div>
+                                <img src="./images/business-services.png" width="80" alt="">
+                            </div>
+                            <p>Business Services</p>
+                        </div>
+                        <span id="awards"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="award-section ">
+            <div class="container">
+                <!-- <p><span class="headerline" style="color: #00534D;font-size: 18px;">EXPERTS</span></p> -->
+                <p data-aos="fade-up" style="font-size:38px; font-weight:900; color:#00534D;"
+                    class="aos-init aos-animate">
+                    CFO StraTech Excellence Awards
+                </p>
+                <div class="">
+                    <div class="">
+                        <p>An evening to celebrate the development of the Digital Transformation ecosystem, with a
+                            series of
+                            awards categories designed to recognise outstanding individual and organisational
+                            achievements
+                            of
+                            India Inc. The CFO StraTech Excellence Awards will recognize versatile business successes
+                            including
+                            technology achievements, innovations and initiatives that inspire!!</p>
+
+                        <div class="awards row">
+                            <div class=" brand-award col-lg-4 m-auto">
+                                <h5 class="col-12 col-lg-12 ">Brand Category Awards</h5>
+                                <p class="col-12 col-lg-12">Trusted Brand Awards</p>
+                                <p class="col-12 col-lg-12">Excellence Awards</p>
+                                <p class="col-12 col-lg-12">Hall of Fame</p>
+                                <a class="nominate" href="./Brand-Category-Awards.html">Nominate Here</a>
+                            </div>
+                            <div class="leadership-award row col-lg-8 m-auto">
+                                <h5 class="col-12 col-lg-12 ">Leadership Category Awards</h5>
+                                <p class="col-12 col-lg-6 col-md-6">CFO Champion - Medium</p>
+                                <p class="col-12 col-lg-6 col-md-6">CFO Champion Large Enterprise</p>
+                                <p class="col-12 col-lg-6 col-md-6">Best Finance Transformation</p>
+                                <p class="col-12 col-lg-6 col-md-6">Excellence in ESG</p>
+                                <p class="col-12 col-lg-12 col-md-12">Champions of Change x 5 no.s</p>
+                                <a class="nominate col-12 col-lg-12" href="./Leadership-Category-Award.html">Nominate
+                                    Here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="registration-btn w-25 m-auto " >
+                        <center><a class="p-2  w-25 text-center text-white text-decoration-none " target="_blank" href="./awards.html">NOMINATE FOR AWARDS</a></center>
+                    </div> -->
+                </div>
+            </div>
+            <span id="partners"></span>
+        </section>
+        <section class="section5">
+            <div class="container">
+                <div class="partner-section ">
+                    <div class="">
+                        <p style="padding: 0px !important;"><span class="headerline"
+                                style="color: #00534D;font-size: 18px;">SOLUTIONS</span></p>
+                        <p data-aos="fade-up"
+                            style="font-size:38px; font-weight:900; color:#00534D;padding: 0px !important;"
+                            class="aos-init aos-animate">
+                            PARTNERS
+                        </p>
+                    </div>
+                    <div class="row">
+                        <!-- <div class="col-12 col-lg-4 col-md-4">
+                        <img src="./images/partners-img.png" width="100%" alt="">
+                    </div> -->
+                        <p>Attendees of CFO StraTech are decision-makers in the finance, accounting, and strategy fields
+                            who
+                            are
+                            interested in learning, exploring, and enhancing their competencies in order to maximise
+                            company
+                            outcomes. Talk to a motivated group of decision-makers by matching your business products
+                            and
+                            services to the needs of their companies.
+                        </p>
+                    </div>
+                </div>
+                <div class="why-partner-section ">
+                    <div class="heading d-flex justify-content-center align-items-baseline">
+                        <div></div>
+                        <h1> WHY PARTNER</h1>
+                    </div>
+                    <div class="row m-auto">
+                        <div class="col-12 col-lg-3 col-md-6 mt-2 mb-3">
+                            <div class="div">
+                                <img src="./images/brand.svg" alt=""> &nbsp; &nbsp;&nbsp;<span>Brand</span>
+                                <p>List your product with a focus on its USP among the top financial, accounting, and
+                                    strategy
+                                    solutions available for the market.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-6 mt-2 mb-3">
+                            <div class="div">
+                                <img src="./images/connect.svg" alt=""> &nbsp; &nbsp;&nbsp;<span>Connect</span>
+                                <p>Attendees are already interested in innovative financial solutions & a slot in the
+                                    agenda will rightly tap the attention and delegate needs
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-6 mt-2 mb-3">
+                            <div class="div">
+                                <img src="./images/showcase.svg" alt=""> &nbsp; &nbsp;&nbsp;<span>Showcase</span>
+                                <p>Attending finance business leaders are keen on building & enhancing their business
+                                    process helping you showcase to suitable connections</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-6 mt-2 mb-3">
+                            <div class="div">
+                                <img src="./images/meetings.svg" alt=""> &nbsp; &nbsp;&nbsp;<span>Meetings</span>
+                                <p>A dedicated slot on the agenda for networking & one-on-one meetings with qualified
+                                    buyers and validated requirements shortens your sales cycle
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+    <section class="section7 partners-2023">
+        <div class="container text-center">
+            <h1 class="heading"> PARTNERS 2023
+            </h1>
+            <br>
+            <h4>Gold Partners</h4>
+            <br>
+            <div class="gold-partners">
+
+                <div class="d-flex flex-column justify-content-center align-items-center">
+
+                    <div class="partner-logo">
+                        <a target="_blank" href="https://www.cygnettaxtech.com/"><img src="./images/partners/Cygnet TaxTech-ai.png"
+                                width="250" alt=""></a>
+                    </div>
+
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <div class="partner-logo">
+                        <a target="_blank" href="https://www.policybazaar.com/"><img
+                                src="./images/partners/PolicyBazaar.jpg" width="250" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <h4>Transformation Partner</h4>
+            <br>
+            <div class="gold-partners">
+
+                <div class="d-flex flex-column justify-content-center align-items-center">
+
+                    <div class="partner-logo">
+                        <a target="_blank" href="https://www.roibypractus.com/"><img src="./images/partners/practus-logo.png"
+                                width="230" alt=""></a>
+                    </div>
+
+                </div>
+            </div>
+            <br><br>
+            <h4>Networking Partners</h4>
+            <br>
+            <div class="gold-partners">
+
+                <div class="d-flex flex-column justify-content-center align-items-center">
+
+                    <div class="partner-logo">
+                        <a target="_blank" href="https://firmway.in/"><img src="./images/partners/FIRMWAY LOGO.png"
+                                width="250" alt=""></a>
+                    </div>
+
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+
+                    <div class="partner-logo">
+                        <a target="_blank" href="https://www.jsspro.com/"><img src="./images/partners/JSS_new_logo.png"
+                                width="200" alt=""></a>
+                    </div>
+
+                </div>
+            </div>
+            <br><br>
+            <h4>Media Partners</h4><br>
+            <div class="media-partners">
+                <div class="partner-logo">
+                    <a target="_blank"
+                        href="https://startupsmagazine.co.uk/"><img
+                            src="./images/partners/BO-Extended-logo.png" height="100" alt=""></a>
+                </div>
+                <div class="partner-logo">
+                    <a target="_blank"
+                        href="https://startupsmagazine.co.uk/"><img
+                            src="./images/partners/Startups_Magazine_2023_Logo.png" width="160" alt=""></a>
+                </div>
+                <div class="partner-logo">
+                    <a target="_blank" href="https://www.worldbusinessoutlook.com/"><img
+                            src="./images/partners/wbologo.png" width="180" alt=""></a>
+                </div>
+                <div class="partner-logo">
+                    <a target="_blank" href="https://financialit.net/"><img src="./images/partners/FIT_Logo.png"
+                            width="170" alt=""></a>
+                </div>
+                <div class="partner-logo">
+                    <a target="_blank" href="https://theglobalhues.com/"><img src="./images/partners/TGH Logo.png"
+                            width="150" alt=""></a>
+                </div>
+                <div class="partner-logo">
+                    <a target="_blank" href="https://globalbizmag.com/"><img src="./images/partners/global_business_magazine.png"
+                            width="140" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="partners container">
+            <div class="container text-center">
+                <h1 class="heading">PAST PARTNERS</h1><br>
+
+                <div class="gold-partners d-flex flex-column justify-content-center align-items-center">
+                    <div class="d-flex justify-content-center align-items-center flex-wrap" style="gap: 30px;">
+                        <div class="partner-logo">
+                            <a target="_blank" href="https://www.concur.co.in/"><img
+                                    src="./images/clients-logo/sapConcur.png" width="190" alt=""></a>
+                        </div>
+                        <div class="partner-logo">
+                            <a target="_blank" href="https://www.kredx.com/"><img src="./images/clients-logo/kredex.png"
+                                    width="190" alt=""></a>
+                        </div>
+                        <div class="partner-logo">
+                            <a target="_blank" href="https://www.policybazaar.com/"><img
+                                    src="./images/clients-logo/policyBazaar.png" width="190" alt=""></a>
+                        </div>
+                        <div class="partner-logo">
+                            <a target="_blank" href="https://www.zoho.com/in/financeplus/"><img
+                                    src="./images/clients-logo/zoho.png" width="190" alt=""></a>
+                        </div>
+                        <div class="partner-logo">
+                            <a target="_blank" href="https://www.itilite.com/"><img
+                                    src="./images/clients-logo/itilite.png" width="190" alt=""></a>
+                        </div>
+                        <div class="partner-logo">
+                            <a target="_blank" href="https://dice.tech/"><img src="./images/clients-logo/dice.png"
+                                    width="190" alt=""></a>
+                        </div>
+                        <div class="partner-logo">
+                            <a target="_blank" href="https://www.automationanywhere.com/"><img
+                                    src="./images/clients-logo/Automation.png" width="190" alt=""></a>
+                        </div>
+                        <div class="partner-logo">
+                            <a target="_blank" href="https://firmway.in/"><img
+                                    src="./images/clients-logo/FIRMWAY LOGO.png" width="160" alt=""></a>
+                        </div>
+                        <div class="partner-logo">
+                            <a target="_blank" href="https://cleartax.in/"><img src="./images/clients-logo/clearTax.png"
+                                    width="190" alt=""></a>
+                        </div>
+                        <div class="partner-logo">
+                            <a target="_blank" href="https://www.karboncard.com/"><img
+                                    src="./images/clients-logo/karbon.png" width="190" alt=""></a>
+                        </div>
+                        <div class="partner-logo">
+                            <a target="_blank" href="https://www.imanet.org/?ssopc=1"><img
+                                    src="./images/clients-logo/Ima-01.png" width="190" alt=""></a>
+                        </div>
+                        <div class="partner-logo">
+                            <a target="_blank" href="https://www.wiley.com/en-in"><img
+                                    src="./images/clients-logo/wileyNxt.png" width="160" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <span id="clients"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section9 clients-section">
+        <div class="container">
+            <p style="padding: 0px !important;"><span class="headerline"
+                    style="color: #00534D;font-size: 18px;">SERVED</span></p>
+            <p data-aos="fade-up" style="font-size:38px; font-weight:900; color:#00534D;padding: 0px !important;"
+                class="aos-init aos-animate">
+                OUR CLIENTS
+            </p>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                    <img src="./images/clients-logo/microsoft.png" width="100%" alt="">
+                </div>
+                <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                    <img src="./images/clients-logo/Adobe-logo.png" width="100%" alt="">
+                </div>
+                <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                    <img src="./images/clients-logo/commvault.png" width="100%" alt="">
+                </div>
+                <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                    <img src="./images/clients-logo/zoho.png" width="100%" alt="">
+                </div>
+                <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                    <img src="./images/clients-logo/sap-logo.png" width="100%" alt="">
+                </div>
+                <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                    <img src="./images/clients-logo/sapConcur.png" width="100%" alt="">
+                </div>
+                <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                    <img src="./images/clients-logo/vmware.png" width="100%" alt="">
+                </div>
+                <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                    <img src="./images/clients-logo/redhat.png" width="100%" alt="">
+                </div>
+                <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                    <img src="./images/clients-logo/gavs.png" width="100%" alt="">
+                </div>
+                <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                    <img src="./images/clients-logo/tataCommunication.png" width="100%" alt="">
+                </div>
+                <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                    <img src="./images/clients-logo/alibaba.png" width="100%" alt="">
+                </div>
+                <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                    <img src="./images/clients-logo/blueYonder.png" width="100%" alt="">
+                </div>
+                <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                    <img src="./images/clients-logo/happay.png" width="100%" alt="">
+                </div>
+                <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                    <img src="./images/clients-logo/gupshup.png" width="100%" alt="">
+                </div>
+                <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                    <img src="./images/clients-logo/neovatic.png" width="100%" alt="">
+                </div>
+                <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                    <img src="./images/clients-logo/sas.png" width="100%" alt="">
+                </div>
+                <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                    <img src="./images/clients-logo/policyBazaar.png" width="100%" alt="">
+                </div>
+                <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                    <img src="./images/clients-logo/kissflow.png" width="100%" alt="">
+                </div>
+            </div>
+            <span id="dots"></span>
+            <span id="more">
+                <div class="row">
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/freshworks.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/cleverTap.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/bugbase.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/denodo.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/idbs.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/clearTax.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/simpliContract.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/int.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/apna.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/frost.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/toTheNew.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/kredex.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/lseg.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/Ima-01.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/anaplan.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/cission.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/CR-01.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/dice.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/itilite.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/apptio.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/parablu.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/qualtrics.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/bigspring.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/brightcove.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/cloud4c.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/staqu.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/dista.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/gslab.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/jfrog.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/fsmGlobal.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/sify.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/karbon.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/seeklms.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/zif.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/kodo.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/Quadra.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/Automation.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/qualityKiosk.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/automationEdge.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/symtrax.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/talview.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/unextJigsaw.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/unstop.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/wileyNxt.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/xoxoday.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/quantiphi.png" width="100%" alt="">
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4 col-sm-6">
+                        <img src="./images/clients-logo/attitudeMakeover.png" width="100%" alt="">
+                    </div>
+                </div>
+            </span><span id="contact"></span>
+            <center>
+                <button onclick="myFunction()" id="myButton"><i class="fa-solid fa-chevron-down fa-2x"></i></button>
+                <button onclick="myFunction()" id="myButton2"><i class="fa-solid fa-chevron-up fa-2x"></i></button>
+            </center>
+        </div>
+
+    </section>
+    <section class="contact-section">
+        <div class="container container1">
+            <div class="row">
+                <div
+                    class="div1 col-lg-3 col-md-3 d-flex flex-column justify-content-around align-items-center pt-5 pb-5">
+                    <h1>REGISTER NOW</h1>
+                    <P>LIMITED PASSES AVAILABLE</P>
+                    <div class="seets">
+                        <p class="timer"><span class="big-text" id="days">0</span>D<span class="big-text"
+                                id="hours">0</span>H<span class="big-text" id="mins">0</span>M</p>
+                    </div>
+                    <p> LEFT</p>
+                </div>
+                <div class=" dibv2 col-lg-9 col-md-9">
+                    <div data-aos="fade-right" class="form" style="display: flex;flex-direction: column; ">
+
+                        <div class="tab-content form-container" id="pills-tabContent">
+                            <div style="background-color: transparent !important;"
+                                class="tab-pane fade form-tab-pane show active" id="pills-speaker" role="tabpanel"
+                                aria-labelledby="pills-speaker-tab">
+                                <form action="./contact.php" class="needs-validation p-3 "
+                                    method="POST">
+                                    <div class="d-flex justify-content-around align-items-center flex-wrap m-auto">
+                                        <div class="m-2">
+                                            <input type="radio" name="associate" id="attendee" value="attendee"
+                                                required>
+                                            <label class="form-check-label" for="attendee">
+                                                ATTENDEE
+                                            </label>
+                                        </div>
+                                        <div class="m-2">
+                                            <input type="radio" name="associate" id="speaker" value="speaker" required>
+                                            <label class="form-check-label" for="speaker">
+                                                SPEAKER
+                                            </label>
+                                        </div>
+                                        <div class="m-2">
+                                            <input type="radio" name="associate" id="sponsor" value="sponsor" required>
+                                            <label class="form-check-label" for="sponsor">
+                                                SPONSOR
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="form-row">
+                                        <div class="mb-3 form-row-input col-md-6">
+                                            <label for="name">Name</label>
+                                            <input type="text" name="name" class="form-control input bg-transparent"
+                                                id="name" required="">
+                                        </div>
+                                        <div class=" mb-3 form-row-input col-md-6">
+                                            <label for="phone">Phone Number</label>
+                                            <input type="tel" class="form-control input bg-transparent" id="phone"
+                                                required="" name="phone">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="mb-3 form-row-input col-md-6">
+                                            <label for="email">Email &nbsp;<span style="font-size: 11px;">( Official emails only )</span></label>
+                                            <input type="email" class="form-control input bg-transparent" id="email"
+                                                required="" name="email">
+                                        </div>
+                                        <div class="mb-3 form-row-input col-md-6">
+                                            <label for="job">Job Title</label>
+                                            <input type="text" class="form-control input bg-transparent" id="job"
+                                                required="" name="job">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="mb-3 form-row-input col-md-12">
+                                            <label for="company">Company Name</label>
+                                            <input type="text" class="form-control input bg-transparent" id="company"
+                                                required="" name="company">
+                                        </div>
+                                    </div>
+
+                                    <button class="submit-btn btn-primary" id="submit" type="submit">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="container container2">
+            <div class="row p-2 m-auto">
+                <p class="">CFO STRATECH 2023 is operated and owned by NetNex Global
+                    Private
+                    Limited, an India registered company specialising in integrated marketing and event
+                    solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class=" div1 col-12 col-lg-4 col-md-4">
+                    <img src="./images/Netnex_footer_logo.svg" class="footer-logo mb-5 pb-3" alt="">
+                    <div>
+                        <p class="social-media">Connect &nbsp; &nbsp; &nbsp; <a target="_blank"
+                                href="https://www.linkedin.com/company/netnex-global/about/"><i
+                                    class="fa-brands fa-linkedin"></i></a>&nbsp; &nbsp; &nbsp;
+                            <a target="_blank" href="https://www.instagram.com/netnex.global/?hl=en"><i
+                                    class="fa-brands fa-instagram"></i></a> &nbsp; &nbsp; &nbsp;<a target="_blank"
+                                href="https://www.youtube.com/channel/UCVYzlmRkYfzOvuP2CTtsUhQ"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="div2 col-12 col-lg-4 col-md-4">
+                    <p class="mb-5">Samrah Plaza, St. Marks Road, Bengaluru,<br> Karnataka - 560001</p>
+                    <p>© Copyright: 2023 All Rights Reserved by NETNEX</p>
+                </div>
+                <div class="div3 col-12 col-lg-4 col-md-4 d-flex justify-content-end">
+                    <div>
+                        <p class="mb-5"><i class="fa-solid fa-envelope"></i> &nbsp; reach@netnexglobal.com <br>
+                            <i class="fa-solid fa-phone"></i> &nbsp; +91 9902 270 877
+                        </p>
+                        <p class="privacy-policy"><a target="_blank"
+                                href="https://netnexgroup.com/privacy-policy/">Privacy Policies • Terms & Conditions</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex; margin: auto; align-items: center; justify-content: center; padding-bottom: 0px;">
+            <button onclick="topFunction()" id="myBtn" title="Go top"><img src="./images/up-arrow.png" width="40"
+                    alt=""></button>
+        </div>
+    </footer>
+
+    <!-- nav fixed -->
+    <script>
+        // navbar design used it below
+        const scrollme = document.querySelector('.nav-fixed');
+        window.onscroll = () => {
+            if (window.scrollY > 30) {
+                scrollme.classList.add('nav-active');
+            } else {
+                scrollme.classList.remove('nav-active');
+            }
+
+        };
+    </script>
+
+
+
+    <!-- section2-sub -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+        type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        (function ($) {
+            $('.buttons button').on('click', function () {
+                $('.modal-background').addClass('show').removeClass('hide');
+                $('#' + $(this).data('modal')).addClass('show').removeClass('hide');
+            });
+
+            $('.modal-background').on('click', function (e) {
+                e.preventDefault();
+                $(this).removeClass('show').addClass('hide');
+                $('.modal.show').removeClass('show').addClass('hide');
+            });
+
+            $('.modal').on('click', function (e) {
+                e.preventDefault();
+            });
+        })(jQuery);
+    </script>
+
+    <!-- section7 -->
+    <script>
+        const accordianItemHeaders = document.querySelectorAll(
+            ".accordian-item-header"
+        );
+
+        accordianItemHeaders.forEach(accordianItemHeader => {
+            accordianItemHeader.addEventListener("mouseover", () => {
+                const current = document.querySelector(".accordian-item-header.active");
+
+                if (current && current !== accordianItemHeader) {
+                    current.classList.toggle("active");
+                    current.nextElementSibling.style.maxHeight = 0;
+                }
+                accordianItemHeader.classList.toggle("active");
+
+                const accordianItemBody = accordianItemHeader.nextElementSibling;
+
+                if (accordianItemHeader.classList.contains("active")) {
+                    accordianItemBody.style.maxHeight = accordianItemBody.scrollHeight + "px";
+                } else {
+                    accordianItemBody.style.maxHeight = 0;
+                }
+            });
+        });
+    </script>
+
+    <!--scroll top -->
+
+    <script>
+
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+            if (window.scrollY > 30) {
+                scrollme.classList.add('nav-active');
+            } else {
+                scrollme.classList.remove('nav-active');
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        $("#cancel_edit").click(function () {
+            window.open('', '_parent', '');
+
+        });
+
+    </script>
+
+    <!-- our clients section -->
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myButton");
+            var btnText2 = document.getElementById("myButton2");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.style.display = "block";
+                btnText2.style.display = "none";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.style.display = "none";
+                btnText2.style.display = "block";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+
+    <!-- Timer -->
+    <script>
+        const daysEl = document.getElementById("days");
+        const hoursEl = document.getElementById("hours");
+        const minsEl = document.getElementById("mins");
+        // const secondsEl = document.getElementById("seconds");
+
+        const newYears = "18 May 2023 08:30:00";
+
+        function countdown() {
+            const newYearsDate = new Date(newYears);
+            const currentDate = new Date();
+
+            const totalSeconds = (newYearsDate - currentDate) / 1000;
+            const days = Math.floor(totalSeconds / 3600 / 24);
+            const hours = Math.floor(totalSeconds / 3600) % 24;
+            const mins = Math.floor(totalSeconds / 60) % 60;
+            const seconds = Math.floor(totalSeconds) % 60;
+
+            daysEl.innerHTML = days;
+            hoursEl.innerHTML = formatTime(hours);
+            minsEl.innerHTML = formatTime(mins);
+            secondsEl.innerHTML = formatTime(seconds);
+        }
+
+        function formatTime(time) {
+            return time < 10 ? `0${time}` : time;
+        }
+
+        // initial call
+        countdown();
+
+        setInterval(countdown, 1000);
+
+    </script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+    <!-- Separate Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

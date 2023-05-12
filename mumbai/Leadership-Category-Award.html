@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./Leadership-Category-Award.css">
+    <link rel="icon" href="./images/netnex-X.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <title>CFO StraTech 2023 - Leadership Category Award</title>
+</head>
+
+<body>
+    <header>
+        <div style="position: fixed;top: 0px; width: 100%;z-index: 200;padding:0px;" class="navigation nav-fixed panel">
+            <nav class="navbar  navbar-expand-lg ">
+                <div class="nav-container">
+                    <div class="logo">
+                        <a href="">
+                            <div class="navbar-brand ">
+                                <a href="./index.html"><img src="./images/Netnex_footer_logo.svg" alt=""></a>
+                            </div>
+                        </a>
+                    </div>
+                    <button style="z-index: 2;" class="navbar-toggler bg-white" type="button" data-toggle="collapse"
+                        data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div style="flex-grow: 0;" class="collapse navbar-collapse  " id="navbarNavDropdown">
+                        <ul class="navbar-nav ul">
+                            <li class="nav-item  pr-4 ">
+                                <a class="nav-link text-black nav-font-size" href="./index.html#about">ABOUT</a>
+                            </li>
+                            <li class="nav-item   pr-4">
+                                <a class="nav-link text-white nav-font-size" href="./index.html#topics">TOPICS</a>
+                            </li>
+                            <li class="nav-item  pr-4 ">
+                                <a class="nav-link text-white nav-font-size" href="./index.html#speakers">SPEAKERS</a>
+                            </li>
+                            <li class="nav-item   pr-4">
+                                <a class="nav-link text-white nav-font-size" href="./index.html#attendees">ATTENDEES</a>
+                            </li>
+                            <li class="nav-item  pr-4 ">
+                                <a class="nav-link text-white nav-font-size" href="./index.html#awards">AWARDS</a>
+                            </li>
+                            <li class="nav-item   pr-4">
+                                <a class="nav-link text-white nav-font-size" href="./index.html#partners">PARTNERS</a>
+                            </li>
+
+                            <li class="nav-item  pr-4">
+                                <a class="nav-link text-white nav-font-size" href="./index.html#contact">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <script>
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function (event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("collapse");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            } 
+        </script>
+
+        <section class="spotlight ">
+            <div class="header-content">
+                <h1>CFO StraTech <br> <span class="small-header">Leadership Category Award</span></h1>
+            </div>
+        </section>
+    </header>
+    <section class="form-section container">
+        <h1>Thanks for your interest in submitting a
+            nomination for the CFO StraTech Awards 2023.</h1>
+        <br>
+        <br>
+        <h4>Please help us understand more about the nomination candidate. </h4>
+        <br>
+        <div>
+            <form action="./Leadership-Category-Award.php" method="POST">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">First Name</label>
+                        <input type="text" class="form-control" id="fname" placeholder="First Name" required
+                            name="fname">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Last Name</label>
+                        <input type="text" class="form-control" id="lname" placeholder="Last Name" required
+                            name="lname">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email" required name="email">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Phone Number" required
+                            name="phone">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Job Title</label>
+                        <input type="text" class="form-control" id="job" placeholder="Job Title" required name="job">
+                    </div>
+                </div>
+
+                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Award Category Nominated for:</label>
+                <select class="custom-select my-1 mr-sm-2" id="select-option" required name="AwardCategory">
+                    <option selected>Choose...</option>
+                    <option value="Tech Champion Awards">CFO CHAMPION - MEDIUM </option>
+                    <option value="Finance Champion Awards">CFO CHAMPION LARGE ENTERPRISE</option>
+                    <option value="People Champion Awards">BEST FINANCE TRANSFORMATION</option>
+                    <option value="Customer Champion Awards">EXCELLENCE IN ESG</option>
+                    <option value="Brand Champion Awards">CHAMPIONS OF CHANGE X 5 NO.S</option>
+                </select>
+                <br><br>
+                <h5>Details of Nomination Candidate </h5>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Candidate First Name</label>
+                        <input type="text" class="form-control" id="NCFName" placeholder=" First Name" required
+                            name="NCFName">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Candidate Last Name</label>
+                        <input type="text" class="form-control" id="NCLName" placeholder=" Last Name" required
+                            name="NCLName">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Candidate Job Title</label>
+                        <input type="text" class="form-control" id="NCJob" placeholder=" Job Title" required
+                            name="NCJob">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Candidate Email Address</label>
+                        <input type="email" class="form-control" id="NCEmail" placeholder=" Email Address" required
+                            name="NCEmail">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">For how many years has the candidate served in a C-level role?</label>
+                        <input type="text" class="form-control" id="Experience" placeholder="Years" required
+                            name="Experience">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">In brief, why should the nominee be considered for this
+                        award?
+                        <br><span class="blockquote-footer">(500 words max)</span></label>
+                    <textarea class="form-control" id="why-consider" maxlength="500" rows="3" required
+                        name="WhyNominated"></textarea>
+                </div>
+                <h5>Privacy Policy Information</h5>
+                <p class="blockquote-footer">By clicking the below button, you agree to submit your information to
+                    NetNex Global Private Limited, who will use this information to communicate with you regarding this
+                    event and any other such similar industry specific events and activities that may be relevant to
+                    your interest and profile.</p>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="I Agree" id="agree" name="agree" required>I
+                    Agree
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary registration-btn">Submit</button>
+            </form>
+        </div>
+        
+    </section>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class=" div1 col-12 col-lg-4 col-md-4">
+                    <img src="./images/Netnex_footer_logo.svg" class="footer-logo mb-5 pb-3" alt="">
+                    <div>
+                        <p class="social-media">Connect &nbsp; &nbsp; &nbsp; <a target="_blank"
+                                href="https://www.linkedin.com/company/netnex-global/about/"><i
+                                    class="fa-brands fa-linkedin"></i></a>&nbsp; &nbsp; &nbsp;
+                            <a target="_blank" href="https://www.instagram.com/netnex.global/?hl=en"><i
+                                    class="fa-brands fa-square-instagram"></i></a> &nbsp; &nbsp; &nbsp;<a
+                                target="_blank" href="https://www.youtube.com/channel/UCVYzlmRkYfzOvuP2CTtsUhQ"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="div2 col-12 col-lg-4 col-md-4">
+                    <p class="mb-5">Samrah Plaza, St. Marks Road, Bengaluru, Karnataka - 560001</p>
+                    <p>© Copyright: 2023 All Rights Reserved by NETNEX</p>
+                </div>
+                <div class="div3 col-12 col-lg-4 col-md-4 d-flex justify-content-end">
+                    <div>
+                        <p class="mb-5"><i class="fa-solid fa-envelope"></i> &nbsp; reach@netnexglobal.com <br>
+                            <i class="fa-solid fa-phone"></i> &nbsp; +91 9902 270 877
+                        </p>
+                        <p class="privacy-policy"><a target="_blank"
+                                href="https://netnexgroup.com/privacy-policy/">Privacy Policies • Terms & Conditions</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex; margin: auto; align-items: center; justify-content: center; padding-bottom: 0px;">
+            <!-- <a class="go-top" href="#header">Go Top</a> -->
+
+            <button onclick="topFunction()" id="myBtn" title="Go top"><img src="./images/top_arrow.svg" alt=""></button>
+        </div>
+    </footer>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <script>
+        // navbar design used it below
+        const scrollme = document.querySelector('.nav-fixed');
+        window.onscroll = () => {
+            if (window.scrollY > 30) {
+                scrollme.classList.add('nav-active');
+            } else {
+                scrollme.classList.remove('nav-active');
+            }
+
+        };
+    </script>
+
+
+</body>
+
+</html>
